@@ -13,7 +13,7 @@ class Main extends React.Component{
 
     render(){
         return(
-            <div className="mt-2 mx-2">
+            <div id="parent-div" className="mt-2 mx-2">
                 <Tabs variant="pills" defaultActiveKey="Full" id="uncontrolled-tab-example">
                     <Tab eventKey="Full" title="Full Window">
                         <Full />

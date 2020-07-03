@@ -9,7 +9,7 @@ class InLine extends React.Component {
             var adobeDCView = new window.AdobeDC.View({ clientId: "6d6d3a3d4ae14826bcff31938de9c860", divId: "adobe-dc-view-inline" });
             adobeDCView.previewFile(
                 {
-                    content: { location: { url: "/MyResources/createPdfFromStaticHtmlOutput.pdf" } },
+                    content: { location: { url: "../MyResources/createPdfFromStaticHtmlOutput.pdf" } },
                     metaData: { fileName: "createPdfFromStaticHtmlOutput.pdf" }
                 },{
                   embedMode: "IN_LINE" 
@@ -23,8 +23,8 @@ class InLine extends React.Component {
           <div>
             <hr style={{ background: "#666" }} />
             <Container>
-                <div className="mx-auto xs-4" style={{color: "#666"}} >
-                    <h1>In-Line</h1>
+                <div className="mx-auto xs-4" style={{color: "#666", width: "14rem"}} >
+                    <h1 className="mx-auto">In-Line</h1>
                 </div>
                 <hr style={{ background: "#666" }} />
                 <p style={{ color: "#555" }}>

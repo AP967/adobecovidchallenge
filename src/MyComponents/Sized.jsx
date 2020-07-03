@@ -9,7 +9,7 @@ class Sized extends React.Component {
             var adobeDCView = new window.AdobeDC.View({ clientId: "6d6d3a3d4ae14826bcff31938de9c860", divId: "adobe-dc-view-sized" });
             adobeDCView.previewFile(
                 {
-                    content: { location: { url: "/MyResources/createPdfFromStaticHtmlOutput.pdf" } },
+                    content: { location: { url: "../MyResources/createPdfFromStaticHtmlOutput.pdf" } },
                     metaData: { fileName: "createPdfFromStaticHtmlOutput.pdf" }
                 },{
                     embedMode: "SIZED_CONTAINER"
@@ -23,7 +23,9 @@ class Sized extends React.Component {
             <div>
                 <hr style={{ background: "#666" }} />
                 <Container>
-                    <h1 style={{color: "#666"}}>Sized Container</h1>
+                    <div style={{width: "18rem"}} className="mx-auto">
+                        <h1 style={{ color: "#666"}} className="mx-auto">Sized Container</h1>
+                    </div>
                     <hr style={{ background: "#666" }} />
                     <p style={{color: "#555"}}>
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum, totam? Fugiat ipsa vero voluptatibus. Unde delectus aut magnam dolor possimus esse vel nostrum repellendus voluptatum perferendis. Odio officiis repudiandae eaque?

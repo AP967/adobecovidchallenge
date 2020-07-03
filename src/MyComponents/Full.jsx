@@ -7,7 +7,7 @@ class Full extends React.Component{
             var adobeDCView = new window.AdobeDC.View({ clientId: "6d6d3a3d4ae14826bcff31938de9c860", divId: "adobe-dc-view-full" });
             adobeDCView.previewFile(
                 {
-                    content: { location: { url: "/MyResources/createPdfFromStaticHtmlOutput.pdf" } },
+                    content: { location: { url: "../MyResources/createPdfFromStaticHtmlOutput.pdf" } },
                     metaData: { fileName: "createPdfFromStaticHtmlOutput.pdf" }
                 },{
                     embedMode: "FULL_WINDOW"
