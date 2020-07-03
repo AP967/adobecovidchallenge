@@ -1,23 +1,32 @@
 import React from 'react';
+import "./bootstrap-4.4.1-dist/css/bootstrap.css";
+import {Container, Tab, Tabs} from 'react-bootstrap';
+
+import Full from './Full';
+import Sized from './Sized';
+import InLine from './InLine';
+
+import "../Main.css";
+
 
 class Main extends React.Component{
-    method(){
-        document.addEventListener("adobe_dc_view_sdk.ready", function () {
-            var adobeDCView = new window.AdobeDC.View({ clientId: "6d6d3a3d4ae14826bcff31938de9c860", divId: "adobe-dc-view" });
-            adobeDCView.previewFile(
-                {
-                    content: { location: { url: "/MyResources/createPdfFromStaticHtmlOutput.pdf" } },
-                    metaData: { fileName: "createPdfFromStaticHtmlOutput.pdf" }
-                });
-        });
-    }
-    componentDidMount(){
-        this.method();
-    }
+
     render(){
         return(
-            <div></div>
-            );
+            <div className="mt-2 mx-2">
+                <Tabs variant="pills" defaultActiveKey="Full" id="uncontrolled-tab-example">
+                    <Tab eventKey="Full" title="Full Window">
+                        <Full />
+                    </Tab>
+                    <Tab eventKey="Sized" title="Sized Container">
+                        <Sized />
+                    </Tab>
+                    <Tab eventKey="InLine" title="In-Line">
+                        <InLine />
+                    </Tab>
+                </Tabs>
+            </div>
+        );
     }
 }
 
