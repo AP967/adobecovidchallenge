@@ -1,6 +1,6 @@
 import React from 'react';
 import "./bootstrap-4.4.1-dist/css/bootstrap.css";
-import {Container, Tab, Tabs} from 'react-bootstrap';
+import {Tab, Tabs} from 'react-bootstrap';
 
 import Full from './Full';
 import Sized from './Sized';

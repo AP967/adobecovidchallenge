@@ -1,7 +1,5 @@
 import React from 'react';
 
-import { Container } from 'react-bootstrap';
-
 class Full extends React.Component{
     constructor(){
         super();
