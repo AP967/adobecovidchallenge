@@ -24,7 +24,9 @@ class Full extends React.Component{
                     <h1 className="mx-auto">Full Window</h1>
                 </div>
                 <hr style={{ background: "#666" }} />
-                <div id="adobe-dc-view-full"></div>
+                <div style={{height: "100vh"}}>
+                    <div id="adobe-dc-view-full"></div>
+                </div>
             </React.Fragment>
         );
     }
